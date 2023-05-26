@@ -1,0 +1,246 @@
+body{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#top-logo{
+    margin: 50px 100px;
+}
+
+.logo{
+    text-align: left;
+    padding-left: 60px;
+}
+
+.secure{
+    text-align: right;
+    padding-right: 60px;
+}
+
+
+.complete-purchase{
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 50px 0;
+}
+
+.secure{
+    color: #afb5c0;
+    font-weight: 600;
+}
+
+#main-cart{
+    width: 1350px;
+    min-height: 300px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.itemTitle{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px 0;
+    margin-left: 130px;
+}
+
+.itemQuantity, .itemPrice{
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.itemQuantity{
+    text-align: left;
+    padding-left: 143px;
+}
+
+.itemPrice{
+    text-align: left;
+    padding-left: 150px;
+}
+
+.itemPic{
+    margin-left: 120px;
+}
+
+.get-product-item{
+    padding: 10px 0;
+}
+
+.title-cart{
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 0;
+    padding-left: 210px;
+    font-size: 1.2rem;
+}
+
+.prod-tot{
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.prod-tot-plus{
+    padding-left: 30px;
+}
+
+.prod-tot-val{
+    text-align: right;
+    padding-right: 30px;
+}
+
+.tot{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 30px;
+}
+
+hr{
+    width: 80%;
+    margin-left: 55px;
+}
+
+#options{
+    margin: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 8px;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    color: #000000;
+    background: #e6e6e6;
+    padding: 20px 60px;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    margin: 0 45px;
+    width: 250px;
+}
+
+.btn:hover, .active-btn {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    background: #8fed66;
+    border: 1px solid black;
+}
+
+#payment_address{
+    width: 83%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.input {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    height: 48px;
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5e6977;
+    width: 250px;
+}
+
+input[type="text"] {
+    display: initial;
+    padding: 15px;
+}
+
+.ddl {
+    border-color: #f0f4f7;
+    background-color: #f0f4f7;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.field{
+    padding: 10px 0;
+}
+
+.payment-shipping {
+    flex: 40%;
+}
+
+.payment-title {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+}
+
+.details__user {
+    background: #f6f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dadada;
+}
+
+#cash{
+    padding-top: 60px;
+}
+
+.cash-title{
+    font-size: 16;
+    text-align: center;
+}
+
+.final-buttons{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.btn-final{
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 8px;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    color: #000000;
+    background: #e6e6e6;
+    padding: 15px 40px;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    margin: 0 45px;
+    width: 250px;
+}
+
+.btn-final:hover{
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    background: #4984ea;
+    border: 1px solid black;
+}
+
+.order-id{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 22;
+    font-weight: 500;
+}

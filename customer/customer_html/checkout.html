@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="images/grocerybox-website-favicon-color.png">
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/984c247a67.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="../../css/customer_css/checkout.css">
+
+    <title>GroceryMe</title>
+</head>
+
+<body>
+
+    <section id="top-logo">
+        <div class="top-logo-container">
+            <div class="row">
+                <div class="col-6 logo"><img
+                        src="../../images/groceryme-high-resolution-logo-black-on-transparent-background.png"
+                        width="120px" alt="logo"></div>
+                <div class="col-6 secure">SECURE CHECKOUT</div>
+            </div>
+            <div class="row complete-purchase">COMPLETE YOUR PURCHASE</div>
+        </div>
+    </section>
+
+    <section id="main-cart">
+        <div class="row cart-total">
+            <div class="col-8 get-products-cart">
+                <div class="title-cart">Items</div>
+            </div>
+            <div class="col-4 get-product-total">
+                <div class="title-cart">Total</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="options">
+        <button id="ccdc" class="btn">Credit/Debit</button>
+        <button id="upiid" class="btn">UPI</button>
+        <button id="nbing" class="btn">NetBanking</button>
+        <button id="cod" class="btn">Cash</button>
+    </section>
+
+    <section id="payment_address">
+        <div class="row">
+            <div class="col-8">
+                <section id="cc" class="payment-form visually-hidden">
+                    <form>
+                        <div class="form-cc">
+                            <div class="row">
+                                <div class="field">
+                                    <div class="title">Credit Card Number</div>
+                                    <input type="text" class="input txt text-validated">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 field">
+                                    <div class="title">Expiry Date</div>
+                                    <select class="input ddl" name="expiry-month" id="expiry-month">
+                                        <option value="" selected disabled>Month</option>
+                                    </select>
+                                    <select class="input ddl" name="expiry-year" id="expiry-year">
+                                        <option value="" selected disabled>Year</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 field">
+                                    <div class="title">CVV Code</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="field">
+                                    <div class="title">Name on Card</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="upi" class="payment-form visually-hidden">
+                    <form>
+                        <div class="form-cc">
+                            <div class="row">
+                                <div class="field">
+                                    <div class="title">UPI ID</div>
+                                    <input type="text" class="input txt text-validated">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="nb" class="payment-form visually-hidden">
+                    <form>
+                        <div class="form-cc">
+                            <div class="row">
+                                <div class="field">
+                                    <div class="title">Customer ID</div>
+                                    <input type="text" class="input txt text-validated">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="field">
+                                    <div class="title">Password</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="cash" class="payment-form visually-hidden">
+                    <div class="cash-title">No Details Required!</div>
+                </section>
+            </div>
+            <div class="col-4">
+                <div class="payment-shipping" id="user-dets">
+                    <div class="payment-title">Shipping Information</div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row final-buttons">
+        <div class="col-6">
+            <button class="btn-final" id="back-shop">Back to shop</button>
+        </div>
+        <div class="col-6">
+            <button class="btn-final" id="place-order">Place your order</button>
+        </div>
+    </div>
+
+    <div class="order-id">
+
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- Axios -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+    <!-- JavaScript -->
+
+    <script src="../../js/customer_checkout.js"></script>
+</body>
+
+</html>

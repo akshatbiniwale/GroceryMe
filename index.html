@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" href="images/grocerybox-website-favicon-color.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- text icons -->
+    <script src="https://kit.fontawesome.com/984c247a67.js" crossorigin="anonymous"></script>
+    <title>GroceryMe</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <section id="navigation">
+        <div class="navigation container-fluid con-flu-nav fixed-top" id="navbarDiv">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand ms-3"><img src="/images/groceryme-high-resolution-logo-white-on-transparent-background.png" alt="logo" height="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#title">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cta">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/customer/customer_html">Customer</a></li>
+                                <li><a class="dropdown-item" href="/retailer/retailer_html">Retailer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="title">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="res-h1">Great groceries delivered instantly!</h1>
+                    <button class="btn btn-dark btn-lg down-but" type="button"><i class="fa-brands fa-apple"></i>  Download</button>
+                    <button class="btn btn-outline-light btn-lg down-but" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+                </div>
+                <div class="col-lg-6 iphone-div">
+                    <img class="iphone-img" src="/images/iphonex.png" alt="app-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="fea">
+            <div class="row">
+                <div class="col-lg-4 fea-head">
+                    <i class="fa-sharp fa-solid fa-heart fa-4x icon"></i>
+                    <h3 class="h3-styling">We respect the decision you make.</h3>
+                    <p class="fea-text">Get groceries delivered to your doorstep or pick it up from the store.</p>
+                </div>
+                <div class="col-lg-4 fea-head">
+                    <i class="fa-solid fa-store fa-4x icon"></i>
+                    <h3 class="h3-styling">Effortless advertisement of your store.</h3>
+                    <p class="fea-text">If you own a store, market your products to the nearby locality.</p>
+                </div>
+                <div class="col-lg-4 fea-head">
+                    <i class="fa-solid fa-circle-check fa-4x icon"></i>
+                    <h3 class="h3-styling">Buy groceries from your trusted stores.</h3>
+                    <p class="fea-text">Trust your daily store? Purchase via GroceryMe and avail huge discounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div id="carousel-test-button" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3500">
+            <div class="carousel-indicators test-but">
+                <button type="button" data-bs-target="#carousel-test-button" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-test-button" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-test-button" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid caro-mar">
+                        <h2 class="h2-styling">No problem even if you don't trust online delivery of groceries, we've got both the options!</h2>
+                        <div class="row test-photo-1">
+                            <div class="col-lg-6">
+                                <img class="img-test-1" src="/images/groceries.jpeg" alt="grocery-photo">
+                            </div>
+                            <div class="col-lg-6 test-text-1">
+                                <em>Fresh groceries delivered instantly.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid caro-mar">
+                        <h2 class="h2-styling">No problem even if you don't trust online delivery of groceries, we've got both the options!</h2>
+                        <div class="row test-photo-2">
+                            <div class="col-lg-6">
+                                <img class="img-test-2" src="/images/grains.jpeg" alt="grains-photo">
+                            </div>
+                            <div class="col-lg-6 test-text-2">
+                                <em>Organic grains from the farms to you.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid caro-mar">  
+                        <h2 class="h2-styling">No problem even if you don't trust online delivery of groceries, we've got both the options!</h2>
+                        <div class="row test-photo-3">
+                            <div class="col-lg-6">
+                                <img class="img-test-3" src="/images/fmcg.jpg" alt="fmcg-photo">
+                            </div>
+                            <div class="col-lg-6 test-text-3">
+                                <em>Expert-verified products for you daily needs.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-test-button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-test-button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="press">
+        <img class="press-logo" src="/images/techcrunch.png" alt="tc-logo">
+        <img class="press-logo" src="/images/tnw.png" alt="tnw-logo">
+        <img class="press-logo" src="/images/bizinsider.png" alt="biz-insider-logo">
+        <img class="press-logo" src="/images/mashable.png" alt="mashable-logo">
+    </section>
+
+    <section id="pricing">
+        <div style="padding: 20px;">
+            <h2 style="font-size: 2.5rem; font-weight: 900;">A plan for every customer and shop owner's need.</h2>
+            <p style="font-size: 1.5rem; font-weight: 400;">Simple and affordable plans for everyone.</p>
+        </div>
+
+        <h2 class="price-type" id="shop-owner">Shop Owner: </h2>
+
+        <div class="row">
+            <div class="card col-lg-6">
+                <div class="card-header fade-head">
+                    <h3>Free</h3>
+                </div>
+                <div class="card-body">
+                    <h3><em>₹0</em> / mo</h3>
+                    <p>Moderately featured in the search bar. Commission of 8% will be deducted on purchases through GroceryMe.</p>
+                    <a href="/retailer/retailer_html"><button type="button" class="btn btn-success">Sign Up</button></a>
+                </div>
+            </div>
+
+            <div class="card col-lg-6">
+                <div class="card-header fade-head">
+                    <h3>Gold</h3>
+                </div>
+                <div class="card-body">
+                    <h3><em>₹200</em> / mo</h3>
+                    <p>More people will see your store when they search. However, discounts on goods will be provided to customers.</p>
+                    <button type="button" class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="price-type" id="customer">Customer: </h2>
+
+        <div class="row">
+            <div class="card col-lg-6">
+                <div class="card-header fade-head">
+                    <h3>Free</h3>
+                </div>
+                <div class="card-body">
+                    <h3><em>₹0</em>  / mo</h3>
+                    <p>Delivery charges as per the distance from the store. Charges to create monthly list.</p>
+                    <a href="/customer/customer_html"><button type="button" class="btn btn-success">Sign Up</button></a>
+                    
+                </div>
+            </div>
+
+            <div class="card col-lg-6">
+                <div class="card-header fade-head">
+                    <h3>Gold</h3>
+                </div>
+                <div class="card-body">
+                    <h3><em>₹250</em> / mo</h3>
+                    <p>Customers will avail more discounts on products. Free delivery on all products.</p>
+                    <button type="button" class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="cta">
+        <div class="container-fluid">
+            <h3 class="cta-text">Join GroceryMe today and buy or sell groceries at amazing discounts.</h3>
+            <button class="btn btn-dark btn-lg down-but" type="button"><i class="fa-brands fa-apple"></i>  Download</button>
+            <button class="btn btn-outline-light btn-lg down-but" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <p>Contact Us:</p>
+            <br>
+            <p style="white-space: pre;"><i class="fa-solid fa-phone"></i>  Akshat: 7506961794          |          <i class="fa-solid fa-phone"></i>  Naman: 9619480353          |          <i class="fa-solid fa-phone"></i>  Rajas: 7710806950</p>
+            <br>
+            <p>© Copyright 2023 GroceryMe</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+
+
+</body>
+</html>

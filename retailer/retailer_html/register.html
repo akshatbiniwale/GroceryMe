@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="/images/grocerybox-website-favicon-color.png">
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- text icons -->
+
+    <script src="https://kit.fontawesome.com/984c247a67.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../css/retailer_css/register.css">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/984c247a67.js" crossorigin="anonymous"></script>
+
+    <title>GroceryMe</title>
+</head>
+
+<body>
+    <a href="/" style="text-decoration: none"><p class="home">Home</p></a>
+    <section id="login-box">
+        <form class="form_container" method="post" action="/retailer_register">
+
+            <div class="logo_container"><img class="logo" src="../../images/g-high-resolution-color-logo.png"
+                alt="logo">
+            </div>
+
+            <div class="title_container">
+                <p class="title">Retailer Registration</p>
+                <span class="subtitle">Get started with our app, just create an account and enjoy the experience.</span>
+            </div>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="input_container col-6 fn">
+                        <label class="input_label" for="name_field">Full Name</label>
+                        <input placeholder="Full Name" title="Enter full name" name="input_name" type="text"
+                            class="input_field" id="name_field" autocomplete="off">
+                    </div>
+        
+                    <div class="input_container col-6 un">
+                        <label class="input_label" for="username_field">Shop Name</label>
+                        
+                        <input placeholder="Shop Name" title="Enter shopname" name="input_shopname" type="text"
+                            class="input_field" id="shopname_field" autocomplete="off">
+                    </div>
+        
+                    
+                </div>
+
+                <div class="row">
+                    <div class="input_container col-6 pn">
+                        <label class="input_label" for="number_field">Phone Number</label>
+                        
+                        <input placeholder="Phone Number" title="Enter phone number" name="input_number" type="text"
+                            class="input_field" id="number_field" autocomplete="off">
+                    </div>
+
+                    <div class="input_container col-6 ad">
+                        <label class="input_label" for="add_field">Address</label>
+                        
+                        <input placeholder="Address" title="Enter address" name="input_address" type="text"
+                            class="input_field" id="add_field" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input_container col-6 ma">
+                        <label class="input_label" for="email_field">Email</label>
+                        
+                        <input placeholder="name@mail.com" title="Enter mail id" name="input_mail" type="text"
+                            class="input_field" id="email_field" autocomplete="off">
+                    </div>
+        
+                    <div class="input_container col-6 ps">
+                        <label class="input_label" for="password_field">Password</label>
+                        
+                        <input placeholder="Password" title="Enter password" name="input_pass" type="password"
+                            class="input_field" id="password_field" autocomplete="off">
+                    </div>
+                </div>
+
+            </div>
+
+            <button title="Sign Up" type="submit" class="sign-up_btn">
+                <span>Sign Up</span>
+            </button>
+
+            <a href="/retailer/retailer_html/"><p class="note">Already have an account? Login Now</p></a>
+
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+
+    <script src="/customer/customer_js/login.js"></script>
+
+</body>
+
+</html>

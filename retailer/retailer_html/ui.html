@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryMe</title>
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="../../images/grocerybox-website-favicon-color.png">
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/984c247a67.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../../css/retailer_css/ui.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <header aria-label="Site Header" class="border-b border-gray-100">
+            <div class="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4">
+                    <button type="button">
+                        <img src="../../images/groceryme-high-resolution-logo-black-on-transparent-background.png"
+                            width="120" alt="logo">
+                    </button>
+                </div>
+
+                <div class="flex flex-1 items-center justify-end gap-8">
+                    <nav aria-label="Site Nav"
+                        class="hidden lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-gray-500">
+                        <a href="#add_item"
+                            class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-green-400">
+                            Add Item
+                        </a>
+                    </nav>
+
+                    <span class="relative">
+                        <button class="block border-b-4 border-transparent p-6 hover:border-green-400"
+                            onclick="toggleDropdown()">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            <span class="sr-only"> Account </span>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10 dropdown hidden">
+                            <a href="/profile" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">Profile</a>
+                            <a href="/order_hist" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">Order
+                                History</a>
+                            <a href="/retailer/retailer_html/"
+                                class="block py-2 px-4 text-gray-800 hover:bg-gray-100">Logout</a>
+                        </div>
+                    </span>
+
+                    <span class="hidden sm:block">
+                        <button class="block border-b-4 border-transparent p-6 hover:border-green-400">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+
+                            <span class="sr-only"> Search </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="table_addItem">
+        <div class="row" style="width: 99%;">
+            <div class="col-6" id="item_add_box">
+                <form action="/upload_item" id="productform" class="form" enctype="multipart/form-data">
+                    <span class="title">Register Product</span>
+                    <label for="itemname" class="label">Item Name</label>
+                    <input type="text" id="itemname" name="item_name" required="" class="input"
+                        placeholder="Enter Item Name">
+                    <label for="price" class="label">Price</label>
+                    <input type="price" id="price" name="price" required="" class="input"
+                        placeholder="Enter Item Price per kg">
+                    <label for="description" class="label">Product Description</label>
+                    <input type="product_desc" id="product_desc" name="product_desc" required="" class="input"
+                        placeholder="Enter Product Description">
+                    <label for="image" class="label">Product Image</label>
+                    <input type="file" id="img" name="img" accept="image/*" required="">
+                    <button type="submit" class="submit">Upload Item</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="limiter">
+                    <div class="container-table100">
+                        <div class="wrap-table100">
+                            <div class="table100">
+                                <h1 class="kirana-title">Kirana Registrations</h1>
+                                <table>
+                                    <thead>
+                                        <tr class="table100-head">
+                                            <th class="column1">Customer Name</th>
+                                            <th class="column2">Contact</th>
+                                            <th class="column3">Email</th>
+                                            <th class="column4">Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body-kirana">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="limiter">
+                    <div class="container-table100">
+                        <div class="wrap-table100">
+                            <div class="table100">
+                                <h1 class="kirana-title">Items Uploaded</h1>
+                                <table>
+                                    <thead>
+                                        <tr class="table100-head">
+                                            <th class="column1">Image</th>
+                                            <th class="column2">Item Name</th>
+                                            <th class="column3">Price</th>
+                                            <th class="column4">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body-items-uploaded">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row" style="width: 99%;">
+            <div class="col-6">
+                <div class="limiter">
+                    <div class="container-table100">
+                        <div class="wrap-table100">
+                            <div class="table100">
+                                <h1 class="kirana-title">Kirana Purchase</h1>
+                                <table>
+                                    <thead>
+                                        <tr class="table100-head">
+                                            <th class="column1">Customer Name</th>
+                                            <th class="column2">Product Purchased</th>
+                                            <th class="column3">Quantity</th>
+                                            <th class="column4">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body-kirana-purchase">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="limiter">
+                    <div class="container-table100">
+                        <div class="wrap-table100">
+                            <div class="table100">
+                                <h1 class="kirana-title">Normal Purchase</h1>
+                                <table>
+                                    <thead>
+                                        <tr class="table100-head">
+                                            <th class="column1">Customer Name</th>
+                                            <th class="column2">Product Purchased</th>
+                                            <th class="column3">Quantity</th>
+                                            <th class="column4">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body-normal-purchase">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+    <script src="../../js/retailer_ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+    .homebtn {
+    margin: 0px 5px;
+}
+
+#heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+#past-cart {
+    width: 1350px;
+    min-height: 300px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.title-cart {
+    color: black;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.mar-title{
+    margin-left: 30px;
+}
+
+.mar-hr{
+    position: relative;
+    left: 20px;
+}
+
+.hr-line {
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.row {
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    margin: 1% 0;
+}
+
+.item-image{
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 25px;
+}
+
+.orderId{
+    position: relative;
+    right: 15px;
+}
+
+.retailerName{
+    position: relative;
+    right: 20px;
+}
+
+.itemTy{
+    position: relative;
+    left: 35px;
+}
+
+body{
+    font-weight: 500;
+}
+
+.innerRow{
+    padding: 2px 0;
+    position: relative;
+    bottom: 10px;
+}

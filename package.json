@@ -1,0 +1,29 @@
+{
+  "name": "groceryme",
+  "version": "1.0.0",
+  "description": "This is a mini project for my 4th semester of computer science engineering.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshat Biniwale",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.36.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "eslint": "^8.37.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "hbs": "^4.2.0",
+    "https": "^1.0.0",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22",
+    "random-web-token": "^2.2.1",
+    "request": "^2.88.2"
+  }
+}
